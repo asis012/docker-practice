@@ -15,13 +15,12 @@ class App extends Component {
       };
 
       let sth = axios
-        .get('http://localhost:8090/', {
+        .get('http://localhost:8000/', {
           headers: header
         })
         .then(Response => {
           console.log(Response.data);
         });
-      
     };
 
     return <div>{this.onCLickHandlerr()}</div>;
